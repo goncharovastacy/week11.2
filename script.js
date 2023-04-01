@@ -1,7 +1,7 @@
 let button = document.getElementById('button');
 function calculateSquare (){
-    let number = document.getElementById('input1');
-    let number2 = number.value;
-    console.log(number2);
+    let number = document.getElementById('input1').value;
+    let square = document.getElementById('input2');
+    square.value = number ** 2;
 }
 button.addEventListener('click', calculateSquare);
